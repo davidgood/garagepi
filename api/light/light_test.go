@@ -7,13 +7,14 @@ import (
 	"net/http"
 	"net/url"
 
+	"github.com/davidgood/garagepi/api/light"
+	test_helpers_fakes "github.com/davidgood/garagepi/fakes"
+	gpio_fakes "github.com/davidgood/garagepi/gpio/fakes"
+	. "github.com/davidgoodagepi/api/light"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/pivotal-golang/lager"
 	"github.com/pivotal-golang/lager/lagertest"
-	"github.com/davidgoodagepi/api/light"
-	test_helpers_fakes "github.com/davidgoodaragepi/fakes"
-	gpio_fakes "github.com/davidgood/garagepi/gpio/fakes"
 )
 
 const (

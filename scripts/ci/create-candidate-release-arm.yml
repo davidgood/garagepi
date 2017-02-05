@@ -1,7 +1,7 @@
 ---
 platform: linux
 
-image: docker:///davidgoodaragepi-cross-compile
+image: docker:///davidgood/garagepi-cross-compile
 
 inputs:
 - name: garagepi

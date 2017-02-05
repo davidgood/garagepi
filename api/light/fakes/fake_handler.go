@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/davidgoodaragepi/api/light"
+	"github.com/davidgood/garagepi/api/light"
 )
 
 type FakeHandler struct {
