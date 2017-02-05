@@ -1,4 +1,4 @@
-FROM robdimsdale/garagepi-1.5
+FROM davidgood/garagepi-1.5
 
 RUN wget -qO- https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz | tar -xvz -C /root
 

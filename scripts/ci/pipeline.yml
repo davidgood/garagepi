@@ -3,28 +3,28 @@ resources:
 - name: garagepi
   type: git
   source:
-    uri: git@github.com:robdimsdale/garagepi
+    uri: git@github.com:davidgood/garagepi
     branch: develop
     private_key: {{private-key}}
 
 - name: garagepi-master
   type: git
   source:
-    uri: git@github.com:robdimsdale/garagepi
+    uri: git@github.com:davidgood/garagepi
     branch: master
     private_key: {{private-key}}
 
 - name: deployments
   type: git
   source:
-    uri: git@github.com:robdimsdale/deployments-rmd
+    uri: git@github.com:davidgood/deployments-rmd
     branch: master
     private_key: {{deployments-private-key}}
 
 - name: garagepi-develop-docker
   type: git
   source:
-    uri: git@github.com:robdimsdale/garagepi
+    uri: git@github.com:davidgood/garagepi
     branch: develop
     private_key: {{private-key}}
     paths:
@@ -73,12 +73,12 @@ resources:
   source:
     access_token: {{github-release-access-token}}
     repository: garagepi
-    user: robdimsdale
+    user: davidgood
 
 - name: docker-garagepi-1.4
   type: docker-image
   source:
-    repository: robdimsdale/garagepi-1.4
+    repository: davidgood/garagepi-1.4
     username: {{docker-username}}
     password: {{docker-password}}
     email: {{docker-email}}
@@ -86,7 +86,7 @@ resources:
 - name: docker-garagepi-1.5
   type: docker-image
   source:
-    repository: robdimsdale/garagepi-1.5
+    repository: davidgood/garagepi-1.5
     username: {{docker-username}}
     password: {{docker-password}}
     email: {{docker-email}}
@@ -94,7 +94,7 @@ resources:
 - name: docker-garagepi-cross-compile
   type: docker-image
   source:
-    repository: robdimsdale/garagepi-cross-compile
+    repository: davidgood/garagepi-cross-compile
     username: {{docker-username}}
     password: {{docker-password}}
     email: {{docker-email}}

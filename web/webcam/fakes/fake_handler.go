@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/robdimsdale/garagepi/web/webcam"
+	"github.com/davidgood/garagepi/web/webcam"
 )
 
 type FakeHandler struct {

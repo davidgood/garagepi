@@ -1,12 +1,12 @@
 # Garagepi
 
-[![Build Status](https://travis-ci.org/robdimsdale/garagepi.svg?branch=master)](https://travis-ci.org/robdimsdale/garagepi) [![Coverage Status](https://img.shields.io/coveralls/robdimsdale/garagepi.svg)](https://coveralls.io/r/robdimsdale/garagepi?branch=master)
+[![Build Status](https://travis-ci.org/davidgood/garagepi.svg?branch=master)](https://travis-ci.org/davidgood/garagepi) [![Coverage Status](https://img.shields.io/coveralls/davidgood/garagepi.svg)](https://coveralls.io/r/davidgood/garagepi?branch=master)
 
 A webserver written in golang to display output of Raspberry Pi camera module and trigger gpio.
 
 A typical use would be to view the interior of a garage and trigger the garage door opener via gpio (and a relay).
 
-Copyright © 2014-2016, Robert Dimsdale. Licensed under the [MIT License](https://github.com/robdimsdale/garagepi/raw/master/LICENSE).
+Copyright © 2014-2016, Robert Dimsdale. Licensed under the [MIT License](https://github.com/davidgood/garagepi/raw/master/LICENSE).
 
 ## Getting started
 
@@ -14,7 +14,7 @@ Requires jacksonliam's [experimental mjpg-streamer](https://github.com/jacksonli
 
 ### Downloading
 
-Obtain the most recent binary from the [releases page](https://github.com/robdimsdale/garagepi/releases).
+Obtain the most recent binary from the [releases page](https://github.com/davidgood/garagepi/releases).
 
 ### Init scripts
 

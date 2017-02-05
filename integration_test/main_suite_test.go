@@ -27,7 +27,7 @@ var _ = BeforeSuite(func() {
 	SetDefaultEventuallyTimeout(10 * time.Second)
 
 	var err error
-	garagepiBinPath, err = gexec.Build("github.com/robdimsdale/garagepi", "-race")
+	garagepiBinPath, err = gexec.Build("github.com/davidgoodaragepi", "-race")
 	Expect(err).ShouldNot(HaveOccurred())
 
 	httpPort = uint(59990 + 2*GinkgoParallelNode())

@@ -1,7 +1,7 @@
 ---
 platform: linux
 
-image: docker:///robdimsdale/garagepi-1.5
+image: docker:///davidgood/garagepi-1.5
 
 inputs:
 - name: candidate-release-arm

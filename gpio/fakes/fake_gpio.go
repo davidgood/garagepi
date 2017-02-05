@@ -4,7 +4,7 @@ package fakes
 import (
 	"sync"
 
-	"github.com/robdimsdale/garagepi/gpio"
+	"github.com/davidgoodaragepi/gpio"
 )
 
 type FakeGpio struct {

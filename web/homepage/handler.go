@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/pivotal-golang/lager"
-	"github.com/robdimsdale/garagepi/api/light"
-	"github.com/robdimsdale/garagepi/web/login"
+	"github.com/davidgood/garagepi/api/light"
+	"github.com/davidgood/garagepi/web/login"
 )
 
 //go:generate counterfeiter . Handler

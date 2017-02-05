@@ -7,7 +7,7 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/pivotal-golang/lager/lagertest"
 
-	"github.com/robdimsdale/garagepi/os"
+	"github.com/davidgood/garagepi/os"
 )
 
 var _ = Describe("OsHelper", func() {

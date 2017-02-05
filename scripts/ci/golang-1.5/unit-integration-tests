@@ -11,8 +11,8 @@ base_dir="$( cd "${my_dir}/../../.." && pwd )"
 scripts_dir="$( cd "${base_dir}/scripts/" && pwd )"
 
 pushd "${base_dir}"
-  mkdir -p "${GOPATH}/src/github.com/robdimsdale"
-  ln -s "${PWD}" "${GOPATH}/src/github.com/robdimsdale/garagepi"
+  mkdir -p "${GOPATH}/src/github.com/davidgood"
+  ln -s "${PWD}" "${GOPATH}/src/github.com/davidgood/garagepi"
 
   go get github.com/onsi/ginkgo/ginkgo
   go get golang.org/x/tools/cmd/vet

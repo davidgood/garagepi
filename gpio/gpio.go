@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/pivotal-golang/lager"
-	"github.com/robdimsdale/garagepi/os"
+	"github.com/davidgoodaragepi/os"
 	"github.com/stianeikeland/go-rpio"
 )
 

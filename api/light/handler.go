@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/pivotal-golang/lager"
-	"github.com/robdimsdale/garagepi/gpio"
+	"github.com/davidgood/garagepi/gpio"
 )
 
 //go:generate counterfeiter . Handler

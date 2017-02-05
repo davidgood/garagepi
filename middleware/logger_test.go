@@ -5,8 +5,8 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/robdimsdale/garagepi/middleware"
-	"github.com/robdimsdale/garagepi/middleware/fakes"
+	"github.com/davidgood/garagepi/middleware"
+	"github.com/davidgood/garagepi/middleware/fakes"
 )
 
 var _ = Describe("Logger", func() {

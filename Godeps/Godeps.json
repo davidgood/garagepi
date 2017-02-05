@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/robdimsdale/garagepi",
+	"ImportPath": "github.com/davidgood/garagepi",
 	"GoVersion": "go1.5.1",
 	"Packages": [
 		"./..."

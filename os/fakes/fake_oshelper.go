@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/robdimsdale/garagepi/os"
+	"github.com/davidgood/garagepi/os"
 )
 
 type FakeOSHelper struct {

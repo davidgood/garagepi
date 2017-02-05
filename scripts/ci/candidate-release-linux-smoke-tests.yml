@@ -1,7 +1,7 @@
 ---
 platform: linux
 
-image: docker:///robdimsdale/garagepi-1.4
+image: docker:///davidgoodaragepi-1.4
 
 inputs:
 - name: garagepi

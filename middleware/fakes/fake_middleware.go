@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/robdimsdale/garagepi/middleware"
+	"github.com/davidgood/garagepi/middleware"
 )
 
 type FakeMiddleware struct {

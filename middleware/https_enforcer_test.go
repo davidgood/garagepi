@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/robdimsdale/garagepi/middleware"
-	"github.com/robdimsdale/garagepi/middleware/fakes"
+	"github.com/davidgood/garagepi/middleware"
+	"github.com/davidgood/garagepi/middleware/fakes"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

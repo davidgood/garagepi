@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/pivotal-golang/lager"
-	"github.com/robdimsdale/garagepi/logger"
+	"github.com/davidgood/garagepi/logger"
 )
 
 func (s *Server) SetMinLevel(w http.ResponseWriter, r *http.Request) {

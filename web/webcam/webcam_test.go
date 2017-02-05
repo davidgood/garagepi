@@ -8,13 +8,13 @@ import (
 	"net/http"
 	"net/url"
 
+	test_helpers_fakes "github.com/davidgood/garagepi/fakes"
+	"github.com/davidgood/garagepi/web/webcam"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/ghttp"
 	"github.com/pivotal-golang/lager"
 	"github.com/pivotal-golang/lager/lagertest"
-	test_helpers_fakes "github.com/robdimsdale/garagepi/fakes"
-	"github.com/robdimsdale/garagepi/web/webcam"
 )
 
 var (

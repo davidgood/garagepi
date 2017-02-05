@@ -8,10 +8,10 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/pivotal-golang/lager"
 	"github.com/pivotal-golang/lager/lagertest"
-	light_fakes "github.com/robdimsdale/garagepi/api/light/fakes"
-	test_helpers_fakes "github.com/robdimsdale/garagepi/fakes"
-	"github.com/robdimsdale/garagepi/web/homepage"
-	login_fakes "github.com/robdimsdale/garagepi/web/login/fakes"
+	light_fakes "github.com/davidgood/garagepi/api/light/fakes"
+	test_helpers_fakes "github.com/davidgood/garagepi/fakes"
+	"github.com/davidgood/garagepi/web/homepage"
+	login_fakes "github.com/davidgood/garagepi/web/login/fakes"
 )
 
 const (

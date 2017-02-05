@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/pivotal-golang/lager"
-	"github.com/robdimsdale/garagepi/gpio"
-	"github.com/robdimsdale/garagepi/os"
+	"github.com/davidgood/garagepi/gpio"
+	"github.com/davidgood/garagepi/os"
 )
 
 //go:generate counterfeiter . Handler
