@@ -4,13 +4,14 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/pivotal-golang/lager"
 	"github.com/davidgood/garagepi/os"
+	"github.com/pivotal-golang/lager"
 	"github.com/stianeikeland/go-rpio"
 )
 
 //go:generate counterfeiter . Gpio
 
+// Gpio Interface
 type Gpio interface {
 	Read(pin uint) (string, error)
 	WriteLow(pin uint) error
@@ -22,6 +23,7 @@ type gpio struct {
 	logger   lager.Logger
 }
 
+// NewGpio ctor
 func NewGpio(
 	osHelper os.OSHelper,
 	logger lager.Logger,
@@ -47,7 +49,7 @@ func (g gpio) Read(pin uint) (string, error) {
 	return fmt.Sprintf("%v", state), err
 }
 
-func (g gpio) WriteLow(pin uint) error {
+func writePin(g gpio, pin uint, state rpio.State) error {
 	g.logger.Debug("writing low to pin", lager.Data{"pin": pin})
 
 	rpin := rpio.Pin(pin)
@@ -59,24 +61,20 @@ func (g gpio) WriteLow(pin uint) error {
 	defer rpio.Close()
 
 	rpin.Output()
-	rpin.Low()
+	if state == rpio.Low {
+		rpin.Low()
+	} else {
+		rpin.High()
+	}
 	return nil
 }
 
+func (g gpio) WriteLow(pin uint) error {
+	return writePin(g, pin, rpio.Low)
+}
+
 func (g gpio) WriteHigh(pin uint) error {
-	g.logger.Debug("writing high to pin", lager.Data{"pin": pin})
-
-	rpin := rpio.Pin(pin)
-
-	err := rpio.Open()
-	if err != nil {
-		return err
-	}
-	defer rpio.Close()
-
-	rpin.Output()
-	rpin.High()
-	return nil
+	return writePin(g, pin, rpio.High)
 }
 
 func tostr(u uint) string {
