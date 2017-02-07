@@ -1,6 +1,17 @@
 #! /bin/sh
 # /etc/init.d/garagestreamer
 
+### BEGIN INIT INFO
+# Provides:          garagestreamer
+# Required-Start:    none
+# Required-Stop:     none
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts garagestreamer
+# Description:       garagestreamer starts mjpg-streamer
+#                    app to stream Raspberry Pi camera
+### END INIT INFO
+
 OUT_LOG=/dev/null
 
 start() {

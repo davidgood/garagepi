@@ -1,6 +1,17 @@
 #! /bin/bash
 # /etc/init.d/garagepi
+### BEGIN INIT INFO
+# Provides:          garagepi
+# Required-Start:    garagestream
+# Required-Stop:     none
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts garagepi
+# Description:       garagepi daemon to check and set
+#                    garage door status
+### END INIT INFO
 
+NAME=garagepi
 OUT_LOG=/dev/null
 GARAGEPI_BINARY=/go/bin/garagepi
 PID_FILE=/run/garagepi.pid
