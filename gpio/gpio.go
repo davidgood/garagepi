@@ -49,8 +49,7 @@ func (g gpio) Read(pin uint) (string, error) {
 	return fmt.Sprintf("%v", state), err
 }
 
-func writePin(g gpio, pin uint, state rpio.State) error {
-	g.logger.Debug("writing low to pin", lager.Data{"pin": pin})
+func writePin(pin uint, hilo func()) error {
 
 	rpin := rpio.Pin(pin)
 
@@ -61,20 +60,22 @@ func writePin(g gpio, pin uint, state rpio.State) error {
 	defer rpio.Close()
 
 	rpin.Output()
-	if state == rpio.Low {
-		rpin.Low()
-	} else {
-		rpin.High()
-	}
+	hilo()
 	return nil
 }
 
 func (g gpio) WriteLow(pin uint) error {
-	return writePin(g, pin, rpio.Low)
+	g.logger.Debug("writing low to pin", lager.Data{"pin": pin})
+
+	writePin(pin, rpio.Pin(pin).Low)
+	return nil
 }
 
 func (g gpio) WriteHigh(pin uint) error {
-	return writePin(g, pin, rpio.High)
+	g.logger.Debug("writing high to pin", lager.Data{"pin": pin})
+
+	writePin(pin, rpio.Pin(pin).High)
+	return nil
 }
 
 func tostr(u uint) string {
